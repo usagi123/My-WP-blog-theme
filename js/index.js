@@ -1,0 +1,1 @@
+$('.menu-item').hasClass('.menu-item').children('a').addClass('nav-link');
