@@ -20,8 +20,8 @@
         <title><?php bloginfo('title'); ?></title>
         <?php wp_head(); ?>
     </head>
-    <body>
 
+    <body <?php body_class(); ?>>
         <div class="aloha">
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="myNav">
                 <div class="container custom-nav">

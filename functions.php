@@ -31,4 +31,19 @@ function my_nav_menu_link_attributes ($atts, $item, $args) {
     return $atts;
 }
 add_filter('nav_menu_link_attributes', 'my_nav_menu_link_attributes', 10, 3);
+
+//Add img-fluid class into post images
+function add_image_class($class){
+    $class .= ' img-fluid';
+    return $class;
+}
+add_filter('get_image_tag_class','add_image_class');
+
+function show_posts_nav() {
+	global $wp_query;
+	return ($wp_query->max_num_pages > 1);
+}
+
+//Numberic pagination
+
 ?>
