@@ -143,13 +143,13 @@ a:hover:after, a:focus:after {
   font-weight: 700;
   font-size: 2rem;
   text-align: left;
-  color: #4ec8ff;
+  color: red;
   font-family: Lato;
 }
 
 .custom-title h6 {
-  font-weight: 300;
-  font-size: 1rem;
+  font-weight: 700;
+  font-size: 2rem;
   text-align: left;
   color: #4ec8ff;
   font-family: Lato;
@@ -262,28 +262,6 @@ a:hover:after, a:focus:after {
   font-size: 16px;
 }
 
-.right-title ul {
-  color: #949494;
-  font: Lato, sans-serif;
-  font-size: 16px;
-  text-align: left;
-  padding-inline-start: 0px;
-  list-style-type: none;
-}
-
-.right-title a {
-  color: #949494;
-  font: Lato, sans-serif;
-  font-size: 16px;
-}
-
-.right-title a:hover {
-  text-decoration: none;
-  color: #4ec8ff;
-}
-
-
-
 .post-preview {
   padding-bottom: 80px;
 }
@@ -292,12 +270,12 @@ a:hover:after, a:focus:after {
   padding-bottom: 10px
 }
 
-.continue-reading {
+.btn-outline-info.continue-reading {
   color: #4ec8ff;
   border-color: #4ec8ff;
 }
 
-.continue-reading:hover {
+.btn-outline-info.continue-reading:hover {
   color: #ffffff;
   border-color: #4ec8ff;
   background-color: #4ec8ff;
@@ -310,14 +288,6 @@ a:hover:after, a:focus:after {
 .page-item.active .page-link {
   z-index: 1;
   color: #fff;
-  background-color: #4ec8ff;
-  border-color: #4ec8ff;
-}
-
-/* For small screen page pagination */
-@media screen and (max-width: 575px) {
-	.ft-wpbs .page-link {
-		font-size: .7rem;
-		padding: .3rem .45rem;
-	}
+  background-color: #FF0000;
+  border-color: #AEFF5E;
 }

@@ -1,7 +1,8 @@
 <?php get_header(); ?>
         <div class="container-fluid custom-title">
             <div class="container">
-                <h1><?php wp_title(''); ?></h1>
+                <h1>Search result for: <?php the_search_query(); ?></h1>
+                <h6>You are browsing the search results for <?php the_search_query(); ?></h6>
             </div>
         </div>
         

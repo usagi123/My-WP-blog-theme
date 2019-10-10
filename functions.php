@@ -1,11 +1,15 @@
 <?php 
+//Theme support function
+add_theme_support('html5', array('search-form'));
 
+//Custom css directory
 function index_script_enqueue() {
     wp_enqueue_style('customstyle', get_template_directory_uri() . '/css/index.css', array(), '1.0.0', 'all');
     wp_enqueue_script('customjs', get_template_directory_uri() . '/js/index.js', array(), '1.0.0', true);
 }
 add_action('wp_enqueue_scripts', 'index_script_enqueue');
 
+//Enable custom menus
 function blog_theme_setup() {
     add_theme_support('menus');
 
@@ -86,4 +90,21 @@ function page_pagination($pages = '', $range = 2) {
         //echo '<div class="pagination-info mb-5 text-center">[ <span class="text-muted">Page</span> '.$paged.' <span class="text-muted">of</span> '.$pages.' ]</div>';	 	
 	}
 }
+
+//Add sidebar functions
+function widget_setup() {
+	register_sidebar(
+		array(
+			'name'			=> 'Sidebar',
+			'id' 			=> 'sidebar-1',
+			'class'			=> 'custom',
+			'description'	=> 'standard sidebar',
+			'before_widget' => '',
+			'after_widget'  => '',
+			'before_title'  => '<h3>',
+			'after_title'   => '</h3>',
+		)
+	);
+}
+add_action('widgets_init','widget_setup')
 ?>
