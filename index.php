@@ -21,10 +21,12 @@
                         ?>    
                     </div>
 
-                    <div class="container-fluid right-button">
+                    <div class="container-fluid right-button ">
                         <?php 
-                            echo paginate_links()
-                        ?>
+                        if (function_exists("page_pagination")){
+                            page_pagination();
+                        }
+                        ?> 
                     </div>
 
 

@@ -262,12 +262,12 @@ a:hover:after, a:focus:after {
   padding-bottom: 10px
 }
 
-.btn-outline-info.continue-reading {
+.continue-reading {
   color: #4ec8ff;
   border-color: #4ec8ff;
 }
 
-.btn-outline-info.continue-reading:hover {
+.continue-reading:hover {
   color: #ffffff;
   border-color: #4ec8ff;
   background-color: #4ec8ff;
@@ -275,4 +275,19 @@ a:hover:after, a:focus:after {
 
 .right-button {
   text-align: right;
+}
+
+.page-item.active .page-link {
+  z-index: 1;
+  color: #fff;
+  background-color: #4ec8ff;
+  border-color: #4ec8ff;
+}
+
+/* For small screen page pagination */
+@media screen and (max-width: 575px) {
+	.ft-wpbs .page-link {
+		font-size: .7rem;
+		padding: .3rem .45rem;
+	}
 }
