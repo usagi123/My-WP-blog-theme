@@ -1,6 +1,7 @@
 <?php 
 //Theme support function
 add_theme_support('html5', array('search-form'));
+add_theme_support('html5', array('comment-list', 'comment-form', 'search-form', 'gallery', 'caption'));
 
 //Custom css directory
 function index_script_enqueue() {
