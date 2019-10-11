@@ -4,6 +4,22 @@
   padding-top: 5px;
 }
 
+.aloha {
+  height: 40vh;
+  background-color: white;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(
+                   rgba(20,20,20, .5), 
+                   rgba(20,20,20, .5)),
+                   url(https://i.imgur.com/s1369TH.jpg);
+  background-size: cover;
+}
+
+.aloha li {
+  display: inline;
+}
+
 .navbar {
   margin-bottom: 0;
   background-color: transparent;
@@ -113,22 +129,6 @@ a:hover:after, a:focus:after {
   background: rgba(0, 0, 0, 0.78); /* NON-IE */
 }
 
-.aloha {
-  height: 40vh;
-  background-color: white;
-  color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(
-                   rgba(20,20,20, .5), 
-                   rgba(20,20,20, .5)),
-                   url(https://i.imgur.com/s1369TH.jpg);
-  background-size: cover;
-}
-
-.aloha li {
-  display: inline;
-}
-
 .bg-primary {
   background-color: #005B96 !important;
 }
@@ -143,7 +143,7 @@ a:hover:after, a:focus:after {
   font-weight: 700;
   font-size: 2rem;
   text-align: left;
-  color: red;
+  color: #4ec8ff;
   font-family: Lato;
 }
 

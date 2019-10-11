@@ -23,17 +23,17 @@
 
     <body <?php body_class(); ?>>
         <div class="aloha">
-            <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="myNav">
+            <div class="navbar navbar-expand-lg navbar-dark fixed-top">
                 <div class="container custom-nav">
                     <a href="<?php echo get_permalink(get_option('page_for_posts')); ?>" class="navbar-brand"><?php bloginfo('title'); ?></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar7">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="navbar-collapse collapse justify-content-stretch" id="navbar7">
+                    <div class="navbar-collapse collapse justify-content-stretch">
                         <ul class="navbar-nav ml-auto">
                             <?php wp_nav_menu(); ?>
                         </ul>
                     </div>
                 </div>
-            </nav>
+            </div>
         </div>
