@@ -3,12 +3,28 @@
 add_theme_support('html5', array('search-form'));
 add_theme_support('html5', array('comment-list', 'comment-form', 'search-form', 'gallery', 'caption'));
 
-//Custom css directory
-function index_script_enqueue() {
-    wp_enqueue_style('customstyle', get_template_directory_uri() . '/css/index.css', array(), '1.0.0', 'all');
-    wp_enqueue_script('customjs', get_template_directory_uri() . '/js/index.js', array(), '1.0.0', true);
+//Register custom css and js directories
+function my_register_styles() {
+	wp_register_style('style1', get_template_directory_uri() . '/css/index.css');
+	wp_register_style('style2', get_template_directory_uri() . '/css/index2.css');
+	wp_register_script('script1', get_template_directory_uri() . '/js/index.js');
 }
-add_action('wp_enqueue_scripts', 'index_script_enqueue');
+add_action('init', 'my_register_styles');
+
+//Apply condition to use registered css
+function my_enqueue_styles() {
+    if (is_front_page()) {
+		wp_enqueue_style('style2');
+		wp_enqueue_script('script1');
+    } elseif (is_page_template('twitchstreamtemplate.php')) {
+		wp_enqueue_style('style1');
+		wp_enqueue_script('script1');
+    } else {
+		wp_enqueue_style('style2');
+		wp_enqueue_script('script1');
+    }
+}
+add_action( 'wp_enqueue_scripts', 'my_enqueue_styles' );
 
 //Enable custom menus
 function blog_theme_setup() {

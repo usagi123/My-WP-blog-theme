@@ -4,7 +4,6 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- <link rel="stylesheet" href="index.css"> -->
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script>
@@ -22,7 +21,7 @@
     </head>
 
     <body <?php body_class(); ?>>
-        <div class="aloha">
+        <div class="aloha container-fluid">
             <div class="navbar navbar-expand-lg navbar-dark fixed-top" id="myNav" <?php echo (is_admin_bar_showing()) ? 'style="top: 32px;"' : ''; ?>>
                 <div class="container custom-nav">
                     <a href="<?php echo get_permalink(get_option('page_for_posts')); ?>" class="navbar-brand"><?php bloginfo('title'); ?></a>
