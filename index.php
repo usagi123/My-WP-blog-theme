@@ -1,7 +1,7 @@
 <?php get_header(); ?>
         <div class="container-fluid custom-title">
             <div class="container">
-                <!-- <h1><?php wp_title(''); ?></h1> -->
+                <h1><?php wp_title(''); ?></h1>
             </div>
         </div>
         
