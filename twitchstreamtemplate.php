@@ -10,25 +10,26 @@ Template Name: Twitch Stream Page
             </div>
         </div>
         
-        <div class="container"> <!--or container-fluid-->
+        <div class="container-fluid"> <!--or container-fluid-->
             <div class="row text-center transition-from-header">
                 <div class="col-md-12 cliente left-title"> 
-                    <!-- Add a placeholder for the Twitch embed -->
-                    <div id="twitch-embed"></div>
-
+                    <div class="container-fluid left-button">
+                    <div id="twitch-embed" class="text-center"></div>
                     <!-- Load the Twitch embed script -->
                     <script src="https://embed.twitch.tv/embed/v1.js"></script>
 
                     <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
                     <script type="text/javascript">
                     new Twitch.Embed("twitch-embed", {
-                        width: '100%',
-                        height: '100%',
-                        channel: "imhikarucat"
+                        width: 1600,
+                        height: 720,
+                        channel: "imhikarucat",
+                        theme: "dark",
                     });
                     </script>
+                    </div>
                 </div>
-        </div>
+            </div>
         <div class="extra-padding-bottom-10px"></div>
         </div>
 <?php get_footer(); ?>

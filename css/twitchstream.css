@@ -179,8 +179,7 @@ a:hover:after, a:focus:after {
 
 .left-title {
   padding-top: 30px;
-  padding-bottom: 10px;
-  border-right: #cdcdcd thin solid;
+  padding-bottom: 50px;
 }
 
 .borderBottom {
@@ -284,10 +283,8 @@ a:hover:after, a:focus:after {
   color: #4ec8ff;
 }
 
-
-
 .post-preview {
-  padding-bottom: 80px;
+  padding-bottom: 50px;
 }
 
 .extra-padding-bottom-10px {

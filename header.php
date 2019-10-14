@@ -24,7 +24,7 @@
         <div class="aloha container-fluid">
             <div class="navbar navbar-expand-lg navbar-dark fixed-top" id="myNav" <?php echo (is_admin_bar_showing()) ? 'style="top: 32px;"' : ''; ?>>
                 <div class="container custom-nav">
-                    <a href="<?php echo get_permalink(get_option('page_for_posts')); ?>" class="navbar-brand"><?php bloginfo('title'); ?></a>
+                    <a href="<?php echo get_home_url(); ?>" class="navbar-brand"><?php bloginfo('title'); ?></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar7">
                         <span class="navbar-toggler-icon"></span>
                     </button>
