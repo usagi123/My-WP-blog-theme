@@ -1,5 +1,7 @@
         <div class="bg-dark">
-        <h5 strong class="mb-0">©2019 Yowayowa</h5>
+            <h6 class="mb-0">
+                © Copyright <?php echo date("Y"); ?> - <a href="<?php home_url(); ?>"><?php bloginfo('title'); ?></a> • Powered by <a href="https://wordpress.org/">Wordpress</a>
+            </h6>
         </div>  
         
         <?php get_footer(); ?>

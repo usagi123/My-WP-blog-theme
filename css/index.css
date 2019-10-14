@@ -161,18 +161,6 @@ a:hover:after, a:focus:after {
   background-color: #005B96 !important;
 }
 
-.bg-dark {
-  background-color: #212529 !important;
-}
-
-.bg-dark h5 {
-  font-family: Lato, sans-serif;
-  color: white;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 .transition-from-header {
   padding-top: 10px;
 }
@@ -320,4 +308,51 @@ a:hover:after, a:focus:after {
 		font-size: .7rem;
 		padding: .3rem .45rem;
 	}
+}
+
+.comment-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.comment {
+  padding: 10px;
+  margin: 10px;
+  border-left: #cdcdcd thin solid;
+  list-style-type: none;
+}
+
+.comments-area {
+  border-top: #cdcdcd thin solid;
+  margin-top: 50px;
+  padding-top: 10px;
+}
+
+.comment-title {
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-align: left;
+  color: #4ec8ff;
+  font-family: Lato, sans-serif;
+}
+
+.bg-dark {
+  background-color: #212529 !important;
+}
+
+.bg-dark h6 {
+  font-family: Lato, sans-serif;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.mb-0 a {
+  color: #fff;
+}
+
+.mb-0 a:hover {
+  text-decoration: none;
+  color: #4ec8ff;
 }

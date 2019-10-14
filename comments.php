@@ -10,6 +10,17 @@ if(post_password_required()) {
         if(have_comments()):
             //have comments
     ?>
+
+    <h2 class="comment-title">
+        <?php 
+            printf(
+                esc_html(_nx('One comment on &ldquo;%2$s&rdquo;', '%1$s comments on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title')),
+                number_format_i18n(get_comments_number()),  
+                get_the_title()
+            );
+        ?>
+    </h2>
+
     <ol class="comment-list">
         <?php
         $args = array(
