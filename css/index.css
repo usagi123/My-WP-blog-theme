@@ -348,6 +348,13 @@ a:hover:after, a:focus:after {
   font-family: Lato, sans-serif;
 }
 
+.fn {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #4ec8ff;
+  font-family: Lato, sans-serif;
+}
+
 .bg-dark {
   background-color: #212529 !important;
 }
