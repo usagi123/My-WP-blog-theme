@@ -2,7 +2,7 @@
         <div class="container-fluid custom-title">
             <div class="container">
                 <!-- <h1><?php wp_title(''); ?></h1> -->
-                <h1>Blog</h1>
+                <h1>Blog entry</h1>
             </div>
         </div>
         
