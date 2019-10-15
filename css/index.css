@@ -348,7 +348,7 @@ a:hover:after, a:focus:after {
   font-family: Lato, sans-serif;
 }
 
-.fn {
+b.fn {
   font-weight: 500;
   font-size: 1rem;
   color: #4ec8ff;
