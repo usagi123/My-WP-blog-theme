@@ -3,6 +3,14 @@
 add_theme_support('html5', array('search-form'));
 add_theme_support('html5', array('comment-list', 'comment-form', 'search-form', 'gallery', 'caption'));
 
+//Set default attachment display setting
+function default_attachment_display_settings() {
+	update_option( 'image_default_align', 'center' );
+	update_option( 'image_default_link_type', 'none' );
+	update_option( 'image_default_size', 'full' );
+}
+add_action( 'after_setup_theme', 'default_attachment_display_settings' );
+
 //Register custom css and js directories
 function my_register_styles() {
 	wp_register_style('style1', get_template_directory_uri() . '/css/index.css');
@@ -128,12 +136,4 @@ function widget_setup() {
 	);
 }
 add_action('widgets_init','widget_setup')
-
-//Set default attachment display setting
-function default_attachment_display_settings() {
-	update_option( 'image_default_align', 'center' );
-	update_option( 'image_default_link_type', 'none' );
-	update_option( 'image_default_size', 'full' );
-}
-add_action( 'after_setup_theme', 'default_attachment_display_settings' );
 ?>
