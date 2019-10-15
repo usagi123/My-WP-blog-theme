@@ -315,6 +315,13 @@ a:hover:after, a:focus:after {
 	}
 }
 
+.wp-block-image figcaption {
+  text-align: center;
+  color: #949494;
+  font: Lato, sans-serif;
+  font-size: 14px;
+}
+
 .comment-list {
   list-style-type: none;
   padding-left: 0;
