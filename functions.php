@@ -128,4 +128,12 @@ function widget_setup() {
 	);
 }
 add_action('widgets_init','widget_setup')
+
+//Set default attachment display setting
+function default_attachment_display_settings() {
+	update_option( 'image_default_align', 'center' );
+	update_option( 'image_default_link_type', 'none' );
+	update_option( 'image_default_size', 'full' );
+}
+add_action( 'after_setup_theme', 'default_attachment_display_settings' );
 ?>
