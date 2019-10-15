@@ -7,6 +7,7 @@ add_theme_support('html5', array('comment-list', 'comment-form', 'search-form', 
 function my_register_styles() {
 	wp_register_style('style1', get_template_directory_uri() . '/css/index.css');
 	wp_register_style('style2', get_template_directory_uri() . '/css/twitchstream.css');
+	wp_register_style('style3', get_template_directory_uri() . '/css/gallery.css');
 	wp_register_script('script1', get_template_directory_uri() . '/js/index.js');
 }
 add_action('init', 'my_register_styles');
@@ -19,7 +20,10 @@ function my_enqueue_styles() {
     } elseif (is_page_template('twitchstreamtemplate.php')) {
 		wp_enqueue_style('style2');
 		wp_enqueue_script('script1');
-    } else {
+	} elseif (is_page_template('gallerytemplate.php')) {
+		wp_enqueue_style('style3');
+		wp_enqueue_script('script1');
+	} else {
 		wp_enqueue_style('style1');
 		wp_enqueue_script('script1');
     }
@@ -54,18 +58,18 @@ function my_nav_menu_link_attributes ($atts, $item, $args) {
 add_filter('nav_menu_link_attributes', 'my_nav_menu_link_attributes', 10, 3);
 
 //Add img-fluid class into post images
-function add_image_class($class){
-    $class .= ' img-fluid';
-    return $class;
-}
-add_filter('get_image_tag_class','add_image_class');
+// function add_image_class($class){
+//     $class .= ' img-fluid';
+//     return $class;
+// }
+// add_filter('get_image_tag_class','add_image_class');
 
+//Numberic pagination
 function show_posts_nav() {
 	global $wp_query;
 	return ($wp_query->max_num_pages > 1);
 }
 
-//Numberic pagination
 function page_pagination($pages = '', $range = 2) {  
 	$showitems = ($range * 2) + 1;  
 	global $paged;
