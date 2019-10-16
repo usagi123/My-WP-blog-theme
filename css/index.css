@@ -219,6 +219,11 @@ a:hover:after, a:focus:after {
   color: #4ec8ff;
 }
 
+.emote{
+  width: 50px;
+  height: auto;
+}
+
 .left-button img {
   max-width: 100%;
   height: auto;
