@@ -1,6 +1,5 @@
 # usablog
-Wordpress theme for my personal blog. Currently running at https://maiphamquanghuy.com/blog/
-Successor of [Nishiro fansub theme](https://github.com/usagi123/Nishiro-fansubs-theme)
+Wordpress theme for my personal blog. Currently running at https://maiphamquanghuy.com/blog/. Successor of [Nishiro fansub theme](https://github.com/usagi123/Nishiro-fansubs-theme)
 
 Build from stratch so probably missing lots of standard features. Will add when needed.
 
