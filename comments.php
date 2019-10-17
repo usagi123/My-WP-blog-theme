@@ -14,7 +14,7 @@ if(post_password_required()) {
     <h2 class="comment-title">
         <?php 
             printf(
-                esc_html(_nx('One comment on &ldquo;%2$s&rdquo;', '%1$s comments on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title')),
+                esc_html(_nx('1 thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title')),
                 number_format_i18n(get_comments_number()),  
                 get_the_title()
             );
