@@ -3,6 +3,10 @@
 add_theme_support('html5', array('search-form'));
 add_theme_support('html5', array('comment-list', 'comment-form', 'search-form', 'gallery', 'caption'));
 
+//Enable oEmbed
+add_filter( 'widget_text', array( $wp_embed, 'run_shortcode' ), 8 );
+add_filter( 'widget_text', array( $wp_embed, 'autoembed'), 8 );
+
 //Set default attachment display setting
 function default_attachment_display_settings() {
 	update_option( 'image_default_align', 'center' );
