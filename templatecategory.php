@@ -1,0 +1,57 @@
+<?php
+/*
+Template Name: Category experimental
+*/ ?>
+
+<?php get_header(); ?>
+        <div class="container-fluid custom-title">
+            <div class="container">
+                <h1><?php wp_title(''); ?></h1>
+            </div>
+        </div>
+        
+        <?php 
+            $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+            $args = array(
+                'post_type' => 'post',
+                'post_status' => 'publish',
+                'category_name' => 'video',
+                'post_per_page' => 10,
+                'paged' => $paged,
+            );
+            $arr_posts = new WP_Query($args);
+        ?>
+
+        <div class="container"> <!--or container-fluid-->
+            <div class="row text-center transition-from-header">
+                <div class="col-md-8 cliente left-title"> 
+                    <div class="container-fluid left-button">
+                        <?php 
+                        if($arr_posts->have_posts()):
+                            while($arr_posts->have_posts()): $arr_posts->the_post();?>
+                            <div class="post-preview">
+                                <a href="<?php the_permalink(); ?>"><h1><?php the_title(); ?></h1></a>
+                                <h6><?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?> by <a href="<?php echo home_url('/', 'https'); ?>author/<?php the_author(); ?>"><?php the_author(); ?></a> ⋅ <a href="<?php comments_link(); ?>"><?php comments_number( '0 comment', '1 comment', '% comments' ); ?></a></h6>
+                                <p><?php the_content(); ?></p>
+                            </div>
+                        <?php
+                            endwhile;
+                        endif;
+                        ?>
+                    </div>
+
+                    <div class="container-fluid right-button ">
+                        <?php 
+                        if (function_exists("page_pagination")){
+                            page_pagination();
+                        }
+                        ?> 
+                    </div>
+
+
+                </div>
+                <?php get_sidebar(); ?>
+        </div>
+        <div class="extra-padding-bottom-10px"></div>
+        </div>
+<?php get_footer(); ?>
