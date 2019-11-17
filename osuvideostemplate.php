@@ -16,7 +16,7 @@ Template Name: Osu videos
                 'post_type' => 'post',
                 'post_status' => 'publish',
                 'category_name' => 'osu',
-                'post_per_page' => 10,
+                'post_per_page' => 1,
                 'paged' => $paged,
             );
             $arr_posts = new WP_Query($args);
