@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Category experimental
+Template Name: Osu videos
 */ ?>
 
 <?php get_header(); ?>
@@ -15,7 +15,7 @@ Template Name: Category experimental
             $args = array(
                 'post_type' => 'post',
                 'post_status' => 'publish',
-                'category_name' => 'video',
+                'category_name' => 'osu',
                 'post_per_page' => 10,
                 'paged' => $paged,
             );
