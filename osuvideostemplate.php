@@ -42,8 +42,8 @@ Template Name: Osu videos
 
                     <div class="container-fluid right-button ">
                         <?php 
-                        if (function_exists("page_pagination")){
-                            page_pagination();
+                        if (function_exists("page_pagination_for_osuvideos")){
+                            page_pagination_for_osuvideos();
                         }
                         ?> 
                     </div>
