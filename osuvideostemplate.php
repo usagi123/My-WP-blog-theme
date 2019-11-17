@@ -40,6 +40,7 @@ Template Name: Osu videos
                         ?>
                     </div>
 
+                    <!-- Page pagination -->
                     <div class="container-fluid right-button ">
                         <?php 
                         $pages = '';
