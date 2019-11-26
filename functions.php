@@ -16,31 +16,33 @@ function default_attachment_display_settings() {
 add_action( 'after_setup_theme', 'default_attachment_display_settings' );
 
 //Register custom css and js directories
-function my_register_styles() {
-	wp_register_style('style1', get_template_directory_uri() . '/css/index.css');
-	wp_register_style('style2', get_template_directory_uri() . '/css/twitchstream.css');
-	wp_register_style('style3', get_template_directory_uri() . '/css/gallery.css');
-	wp_register_script('script1', get_template_directory_uri() . '/js/index.js');
-}
-add_action('init', 'my_register_styles');
+function custom_scripts_method() {
+    wp_register_style( 'index-style', get_stylesheet_directory_uri() . '/css/index.css', array(), '1', 'all' );
+	wp_register_style( 'stream-style', get_stylesheet_directory_uri() . '/css/twitchstream.css', array(), '1', 'all' );
+    wp_register_style( 'gallery-style', get_stylesheet_directory_uri() . '/css/gallery.css', array(), '1', 'all' );
+    wp_register_style( 'homepage-style', get_stylesheet_directory_uri() . '/css/homepage.css', array(), '1', 'all' );
 
-//Apply condition to use registered css
-function my_enqueue_styles() {
+    wp_register_script('index-script', get_template_directory_uri().'/js/index.js', array('jquery'), '', TRUE);
+    wp_register_script('homepage-script', get_template_directory_uri().'/js/homepage.js', array('jquery'), '', TRUE);
+
     if (is_front_page()) {
-		wp_enqueue_style('style1');
-		wp_enqueue_script('script1');
+		wp_enqueue_style('index-style');
+		wp_enqueue_script('index-script');
     } elseif (is_page_template('twitchstreamtemplate.php')) {
-		wp_enqueue_style('style2');
-		wp_enqueue_script('script1');
+		wp_enqueue_style('stream-style');
+		wp_enqueue_script('index-script');
 	} elseif (is_page_template('gallerytemplate.php')) {
-		wp_enqueue_style('style3');
-		wp_enqueue_script('script1');
+		wp_enqueue_style('gallery-style');
+		wp_enqueue_script('index-script');
+	} elseif (is_page_template('homepagetemplate.php')) {
+		wp_enqueue_style('homepage-style');
+		wp_enqueue_script('homepage-script');
 	} else {
 		wp_enqueue_style('style1');
-		wp_enqueue_script('script1');
+		wp_enqueue_script('index-script');
     }
 }
-add_action( 'wp_enqueue_scripts', 'my_enqueue_styles' );
+add_action( 'wp_enqueue_scripts', 'custom_scripts_method' );
 
 //Enable custom menus
 function blog_theme_setup() {
