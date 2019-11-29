@@ -38,7 +38,7 @@ function custom_scripts_method() {
 		wp_enqueue_style('homepage-style');
 		wp_enqueue_script('homepage-script');
 	} else {
-		wp_enqueue_style('style1');
+		wp_enqueue_style('index-style');
 		wp_enqueue_script('index-script');
     }
 }
@@ -65,8 +65,10 @@ function special_nav_class ($classes, $item) {
 add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
 
 // Add custon class to a in nav menu
+// https://codex.wordpress.org/Plugin_API/Filter_Reference/nav_menu_link_attributes
+// https://wordpress.stackexchange.com/questions/100726/add-custom-attributes-to-menu-items-without-plugin
 function my_nav_menu_link_attributes ($atts, $item, $args) {
-    $atts['class'] = 'nav-link';
+    $atts['class'] = 'nav-link nav-a';
     return $atts;
 }
 add_filter('nav_menu_link_attributes', 'my_nav_menu_link_attributes', 10, 3);
