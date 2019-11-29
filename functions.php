@@ -25,19 +25,27 @@ function custom_scripts_method() {
     wp_register_script('index-script', get_template_directory_uri().'/js/index.js', array('jquery'), '', TRUE);
     wp_register_script('homepage-script', get_template_directory_uri().'/js/homepage.js', array('jquery'), '', TRUE);
 
-    if (is_front_page()) {
-		wp_enqueue_style('index-style');
-		wp_enqueue_script('index-script');
-    } elseif (is_page_template('twitchstreamtemplate.php')) {
+    // if (is_front_page()) {
+	// 	wp_enqueue_style('index-style');
+	// 	wp_enqueue_script('index-script');
+	// } 	
+	if (is_page_template('twitchstreamtemplate.php')) {
 		wp_enqueue_style('stream-style');
 		wp_enqueue_script('index-script');
-	} elseif (is_page_template('gallerytemplate.php')) {
+	} 	
+	elseif (is_page_template('gallerytemplate.php')) {
 		wp_enqueue_style('gallery-style');
 		wp_enqueue_script('index-script');
-	} elseif (is_page_template('homepagetemplate.php')) {
+	} 	
+	elseif (is_page_template('homepagetemplate.php')) {
 		wp_enqueue_style('homepage-style');
 		wp_enqueue_script('homepage-script');
-	} else {
+	}	
+	elseif (is_page_template('osuvideostemplate.php')) {
+			wp_enqueue_style('index-style');
+			wp_enqueue_script('index-script');
+	} 
+	else {
 		wp_enqueue_style('index-style');
 		wp_enqueue_script('index-script');
     }
