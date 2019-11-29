@@ -22,7 +22,7 @@ Template Name: Homepage
                     <a class="js-scroll-trigger" href="https://maiphamquanghuy.com/">Home</a>
                 </li>
                 <li class="sidebar-nav-item">
-                    <a class="js-scroll-trigger" href="https://maiphamquanghuy.com/construction/">Blog</a>
+                    <a class="js-scroll-trigger" href="https://maiphamquanghuy.com/blog/">Blog</a>
                     </li>
                 <li class="sidebar-nav-item">
                     <a href="https://myanimelist.net/animelist/imhikarucat" target="_blank">MAL List</a>
