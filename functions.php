@@ -7,6 +7,7 @@ add_theme_support('html5', array('comment-list', 'comment-form', 'search-form', 
 add_filter( 'widget_text', array( $wp_embed, 'run_shortcode' ), 8 );
 add_filter( 'widget_text', array( $wp_embed, 'autoembed'), 8 );
 
+
 //Set default attachment display setting
 function default_attachment_display_settings() {
 	update_option( 'image_default_align', 'center' );
@@ -22,7 +23,7 @@ function custom_scripts_method() {
     wp_register_style( 'gallery-style', get_stylesheet_directory_uri() . '/css/gallery.css', array(), '1', 'all' );
     wp_register_style( 'homepage-style', get_stylesheet_directory_uri() . '/css/homepage.css', array(), '1', 'all' );
 
-    wp_register_script('index-script', get_template_directory_uri().'/js/index.js'@);
+    wp_register_script('index-script', get_template_directory_uri().'/js/index.js');
     wp_register_script('homepage-script', get_template_directory_uri().'/js/homepage.js', array('jquery'), '', TRUE);
 
     // if (is_front_page()) {
@@ -153,4 +154,3 @@ function widget_setup() {
 }
 add_action('widgets_init','widget_setup')
 ?>
-
