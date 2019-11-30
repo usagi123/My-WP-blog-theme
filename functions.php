@@ -12,6 +12,16 @@ add_filter( 'widget_text', array( $wp_embed, 'autoembed'), 8 );
 @ini_set( 'post_max_size', '64M');
 @ini_set( 'max_execution_time', '300' );
 
+//Enable WebP upload
+if ( ! function_exists( 'uncoverwp_webp_upload_mimes' ) ) :
+    function uncoverwp_webp_upload_mimes( $existing_mimes )
+    {
+        $existing_mimes['webp'] = 'image/webp';
+        return $existing_mimes;
+    }
+    add_filter( 'mime_types', 'uncoverwp_webp_upload_mimes' );
+endif;
+
 //Set default attachment display setting
 function default_attachment_display_settings() {
 	update_option( 'image_default_align', 'center' );
