@@ -68,7 +68,8 @@ Template Name: Homepage
     <div class="masthead d-flex">
         <div class="container text-center my-auto">
             <div class="col-xl-8 col-centered">
-                <img src="https://i.imgur.com/bWBDHeb.gif" class="img-fluid" alt="" data-toggle="tooltip" data-placement="top" title="me irl">
+                <!-- <img src="https://i.imgur.com/bWBDHeb.gif" class="img-fluid" alt="" data-toggle="tooltip" data-placement="top" title="me irl"> -->
+                <video autoplay loop muted data-toggle="tooltip" data-placement="top" title="me irl"><source src="https://maiphamquanghuy.com/wp-content/uploads/2019/11/ezgif.com-gif-to-webm.webm" type="video/webm"></video>
                 <!-- <h1>The easiest and powerful way</h1> -->
                 <h1>Mai Pham Quang Huy (<span id="age"></span>)</h1>
                 <h4>Dev, Videomaker, Tryharder, Student</h4>

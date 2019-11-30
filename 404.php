@@ -37,7 +37,8 @@
     <div class="masthead d-flex">
         <div class="container text-center my-auto">
         <div class="col-xl-8 col-centered">
-            <img src="https://i.imgur.com/HXpuBMd.gif" class="img-fluid" alt="" data-toggle="tooltip" data-placement="top" title="me irl">
+            <!-- <img src="https://i.imgur.com/HXpuBMd.gif" class="img-fluid" alt="" data-toggle="tooltip" data-placement="top" title="me irl"> -->
+            <video autoplay loop muted data-toggle="tooltip" data-placement="top" title="me irl"><source src="https://maiphamquanghuy.com/wp-content/uploads/2019/11/ezgif.com-gif-to-webm-1.webm" type="video/webm"></video>
             <!-- <h1>The easiest and powerful way</h1> -->
             <h1>Page not found</h1>
             <h4><span data-toggle="tooltip" data-placement="top" title="oof">Sorry for this inconvenicence</span></h4>
