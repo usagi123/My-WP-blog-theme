@@ -7,11 +7,6 @@ add_theme_support('html5', array('comment-list', 'comment-form', 'search-form', 
 add_filter( 'widget_text', array( $wp_embed, 'run_shortcode' ), 8 );
 add_filter( 'widget_text', array( $wp_embed, 'autoembed'), 8 );
 
-//Increase upload size
-@ini_set( 'upload_max_size' , '64M' );
-@ini_set( 'post_max_size', '64M');
-@ini_set( 'max_execution_time', '300' );
-
 //Set default attachment display setting
 function default_attachment_display_settings() {
 	update_option( 'image_default_align', 'center' );
@@ -157,4 +152,10 @@ function widget_setup() {
 	);
 }
 add_action('widgets_init','widget_setup')
+
+//Increase upload size
+@ini_set( 'upload_max_size' , '64M' );
+@ini_set( 'post_max_size', '64M');
+@ini_set( 'max_execution_time', '300' );
 ?>
+
