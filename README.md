@@ -1,5 +1,5 @@
 # usablog
-Wordpress theme for my personal blog. Currently running at https://maiphamquanghuy.com/blog/. 
+Wordpress theme for my personal blog.
 
 Successor of [Nishiro fansub theme](https://github.com/usagi123/Nishiro-fansubs-theme)
 
