@@ -55,7 +55,6 @@ Template Name: Homepage
                 </li>
                 <li class="credit">
                     _________________________________________<br>
-                    Built with Bootstrap 4 <br>
                     Mai Pham Quang Huy <br>
                     Copyright &copy; 2017 &mdash; <span id="currentDate"></span>
                 </li>
