@@ -1,6 +1,7 @@
         <div class="bg-dark">
             <h6 class="mb-0">
-                © Copyright <?php echo date("Y"); ?> - <a href="<?php home_url(); ?>"><?php bloginfo('title'); ?></a>
+                <!--© Copyright <?php echo date("Y"); ?> - <a href="<?php home_url(); ?>"><?php bloginfo('title'); ?></a>-->
+                © Copyright <?php echo date("Y"); ?> - <a href="https://github.com/usagi123/usablog"><?php imhikarucat; ?>
             </h6>
         </div>  
         
