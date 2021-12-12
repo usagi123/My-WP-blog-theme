@@ -99,7 +99,7 @@ Template Name: Homepage
                     <i class="fab fa-youtube fa-2x" style="padding: 0 5px 0 5px"></i>
                     </a>
                     <i class="fab fa-discord fa-2x" style="padding: 0 5px 0 5px" data-toggle="tooltip" data-placement="bottom" title="imhikarucat#2707"></i>
-                    <a href="http://steamcommunity.com/id/imhikarucat" target="_blank" data-toggle="tooltip" data-placement="bottom" title="黄前久美子">
+                    <a href="http://steamcommunity.com/id/imhikarucat" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Cinnamoroll">
                     <i class="fab fa-steam fa-2x" style="padding: 0 5px 0 5px"></i>
                     </a>
                 </div>
