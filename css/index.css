@@ -379,3 +379,20 @@ b.fn {
   text-decoration: none;
   color: #4ec8ff;
 }
+
+.wp-block-button__link {
+  background-color: #fff;
+  border-radius: 0.25rem;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  border: 1px solid;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: .375rem .75rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.akismet_comment_form_privacy_notice {
+  padding-left: 20px;
+}

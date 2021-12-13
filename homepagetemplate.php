@@ -71,7 +71,7 @@ Template Name: Homepage
                 <!-- <video autoplay loop muted data-toggle="tooltip" data-placement="top" title="me irl"><source src="https://i.imgur.com/bWBDHeb.gif" type="video/webm"></video> -->
                 <!-- <h1>The easiest and powerful way</h1> -->
                 <h1>Mai Pham Quang Huy (<span id="age"></span>)</h1>
-                <h4>Dev, Videomaker, Tryharder, Student</h4>
+                <h4>Software Engineer, Videomaker, Tryharder, Student</h4>
                 <p>Me? A wanderer, although don’t travel much. Hobbies? Many, working with codes, editing videos,
                     <span data-toggle="tooltip" data-placement="bottom" title="R6 Seige, CS:GO, Dota">competitive gamer</span>, translating, working on some encodes, and fansubbing.</p>
                 <p>
@@ -99,7 +99,7 @@ Template Name: Homepage
                     <i class="fab fa-youtube fa-2x" style="padding: 0 5px 0 5px"></i>
                     </a>
                     <i class="fab fa-discord fa-2x" style="padding: 0 5px 0 5px" data-toggle="tooltip" data-placement="bottom" title="imhikarucat#2707"></i>
-                    <a href="http://steamcommunity.com/id/imhikarucat" target="_blank" data-toggle="tooltip" data-placement="bottom" title="黄前久美子">
+                    <a href="http://steamcommunity.com/id/imhikarucat" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Cinnamoroll">
                     <i class="fab fa-steam fa-2x" style="padding: 0 5px 0 5px"></i>
                     </a>
                 </div>
