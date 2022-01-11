@@ -36,6 +36,7 @@ function custom_scripts_method() {
 	wp_register_style( 'stream-style', get_stylesheet_directory_uri() . '/css/twitchstream.css', array(), '1', 'all' );
     wp_register_style( 'gallery-style', get_stylesheet_directory_uri() . '/css/gallery.css', array(), '1', 'all' );
     wp_register_style( 'homepage-style', get_stylesheet_directory_uri() . '/css/homepage.css', array(), '1', 'all' );
+	wp_register_style( '404-style', get_stylesheet_directory_uri() . '/css/404.css', array(), '1', 'all' );
 
     wp_register_script('index-script', get_template_directory_uri().'/js/index.js');
     wp_register_script('homepage-script', get_template_directory_uri().'/js/homepage.js', array('jquery'), '', TRUE);
@@ -44,7 +45,11 @@ function custom_scripts_method() {
 	// 	wp_enqueue_style('index-style');
 	// 	wp_enqueue_script('index-script');
 	// } 	
-	if (is_page_template('twitchstreamtemplate.php')) {
+	if (is_404()) {
+        wp_enqueue_style('404-style');
+		wp_enqueue_script('index-script');
+	}
+	elseif (is_page_template('twitchstreamtemplate.php')) {
 		wp_enqueue_style('stream-style');
 		wp_enqueue_script('index-script');
 	} 	
