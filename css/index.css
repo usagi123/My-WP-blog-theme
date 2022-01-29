@@ -198,8 +198,8 @@ a:hover:after, a:focus:after {
 .left-title p {
   text-align: left;
   color: #949494;
-  font: Lato, sans-serif;
-  font-size: 16px;
+  font-family: Lato, sans-serif;
+  /*font-size: 16px;*/
 }
 
 .left-title h3 {
@@ -381,7 +381,7 @@ b.fn {
   color: #4ec8ff;
 }
 
-.wp-block-button {
+/*.wp-block-button {
   background-color: #fff;
   border-radius: 0.25rem;
   font-weight: 400;
@@ -392,7 +392,7 @@ b.fn {
   line-height: 1.5;
   padding: .375rem .75rem;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
+}*/
 
 .wp-block-button__link {
   background-color: #fff;
@@ -408,5 +408,6 @@ b.fn {
 }
 
 .akismet_comment_form_privacy_notice {
-  padding-left: 20px;
+  padding-left: 140px;
+  font-size: 15px;
 }
