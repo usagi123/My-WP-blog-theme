@@ -407,5 +407,6 @@ b.fn {
 }
 
 .akismet_comment_form_privacy_notice {
-  padding-left: 20px;
+  padding-left: 140px;
+  font-size: 15px;
 }
