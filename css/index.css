@@ -389,7 +389,7 @@ b.fn {
   border: 0px solid;
   font-size: 0rem;
   line-height: 0;
-  padding: 0rem;
+  padding-top: 10px;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
