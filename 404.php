@@ -30,7 +30,7 @@
                     <div class="explain" data-tooltip="Ehhh? I could not find your page...!">
                         あれれ？探しているページが見つからないよ…！
                     </div>
-                    <img src="https://i.imgur.com/kLbqaws.jpg" class="img-fluid question-mark" alt="" data-toggle="tooltip" data-placement="top" title="me irl">
+                    <img src="http://imhikarucat.aloadae.feralhosting.com/assets/usablog/bg_404.jpg" class="img-fluid question-mark" alt="" data-toggle="tooltip" data-placement="top" title="me irl">
                     <a href="javascript:history.back()"><button type="button" class="btn btn-outline-info">Back to previous page</button></a>
                 </div>
             </div>
